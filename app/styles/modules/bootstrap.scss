@@ -24,4 +24,8 @@ $loading-top:    $logo-top + $logo-height;
   height: $loading-height;
   left:   $loading-left;
   top:    $loading-top;
+
+  img {
+    display: none;
+  }
 }

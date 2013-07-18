@@ -3,7 +3,7 @@
     0: ->
      $('.bootstrap').animate(opacity: 1, 2000)
     2500: ->
-      $('.bootstrap-loading').append('<img src="images/loading.gif" alt="Loading">')
+      $('.bootstrap-loading img').show()
     10000: ->
       $('.bootstrap-loading').remove()
       $('.bootstrap-logo').animate(opacity: 1)
