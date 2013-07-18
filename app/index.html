@@ -10,15 +10,25 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-  <!-- build:css({.tmp,app}) styles/main.css -->
+  <!-- build:css({.tmp,app}) styles/console.css -->
   <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/modules/background.css">
+  <link rel="stylesheet" href="styles/modules/bootstrap.css">
+  <link rel="stylesheet" href="styles/modules/main_menu.css">
   <!-- endbuild -->
 </head>
 <body>
-  <div class="layout-console"></div>
-  <!-- build:js({.tmp,app}) scripts/main.js -->
-  <script src="scripts/main.js"></script>
-  <script src="scripts/hello.js"></script>
+  <div class="layout-console bootstrap">
+    <div class="background"></div>
+    <div class="bootstrap-logo"></div>
+    <div class="bootstrap-loading"> </div>
+  </div>
+  <div class="layout-console main-menu">
+    <div class="long-background"></div>
+  </div>
+  <!-- build:js({.tmp,app}) scripts/console.js -->
+  <script src="bower_components/zepto/zepto.js"></script>
+  <script src="scripts/bootstrap.js"></script>
   <!-- endbuild -->
 </body>
 </html>

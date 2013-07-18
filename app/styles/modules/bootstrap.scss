@@ -1,0 +1,27 @@
+$logo-width:  454px;
+$logo-height: 138px;
+$logo-left:   (1920px - $logo-width) / 2;
+$logo-top:    (1080px - $logo-height) / 3;
+
+$loading-width:  128px;
+$loading-height: 128px;
+$loading-left:   (1920px - $loading-width) / 2;
+$loading-top:    $logo-top + $logo-height;
+
+.bootstrap-logo {
+  opacity: 0.5;
+  background-image: image-url('kamigami.png');
+  position: absolute;
+  width:  $logo-width;
+  height: $logo-height;
+  left:   $logo-left;
+  top:    $logo-top;
+}
+
+.bootstrap-loading {
+  position: absolute;
+  width:  $loading-width;
+  height: $loading-height;
+  left:   $loading-left;
+  top:    $loading-top;
+}
