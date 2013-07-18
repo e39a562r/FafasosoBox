@@ -1,5 +1,5 @@
 @mainMenu = ->
-  $('.main-menu').show()
+  $('.main-menu').show().removeClass('play')
 
   currentItem = 0
 
@@ -11,6 +11,11 @@
       when Gamepad.DOWN
         currentItem = (currentItem + 1) % 4
         $('.menu-item').removeClass('on').eq(currentItem).addClass('on')
+      when Gamepad.A
+        switch currentItem
+          when 0
+            $('body').off('keydown', mainMenuKeyboardHandler)
+            playMenu()
 
   timeline =
     0: ->

@@ -37,6 +37,10 @@ $menu-item-on-height: 292px;
   &.outside {
     right: -1000px;
   }
+
+  .play & {
+    right: 1920px;
+  }
 }
 
 .menu-item-play {

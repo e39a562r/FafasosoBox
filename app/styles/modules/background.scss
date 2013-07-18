@@ -10,7 +10,7 @@
 }
 
 .long-background {
-  @include transition(left 0.3s);
+  @include transition(left 0.2s);
   position: absolute;
   background-image: image-url('long-background.png');
   width: 1920px * 2;
@@ -18,7 +18,7 @@
   left: 0;
   top: 0;
 
-  &.play {
+  .play & {
     left: -1920px;
   }
 }
