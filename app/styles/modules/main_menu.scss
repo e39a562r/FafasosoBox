@@ -1,4 +1,55 @@
+@import 'compass';
+
+$menu-item-off-width: 488px;
+$menu-item-off-height: 86px;
+$menu-item-on-width: 1079px;
+$menu-item-on-height: 292px;
+
 .main-menu {
   display: none;
   opacity: 1;
+}
+
+.menu-item {
+  @include transition(right 0.2s);
+  position: absolute;
+  width: $menu-item-on-width;
+  height: $menu-item-off-height;
+  right: 0;
+  text-align: right;
+
+  .menu-item-on {
+    display: none;
+  }
+
+  &.on .menu-item-on {
+    display: block;
+  }
+
+  &.on .menu-item-off {
+    display: none;
+  }
+
+  &.on {
+    right: 80px;
+  }
+}
+
+.menu-item-play {
+  bottom: 350px + $menu-item-off-height * 3 * 1.5;
+}
+
+.menu-item-store {
+  bottom: 350px + $menu-item-off-height * 2 * 1.5;
+}
+
+.menu-item-internet {
+  bottom: 350px + $menu-item-off-height * 1 * 1.5;
+}
+
+.menu-item-config {
+  bottom: 350px;
+}
+
+.menu-item-on {
 }
