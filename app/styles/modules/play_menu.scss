@@ -16,7 +16,7 @@
 
 .play-menu-game {
   @include transition(opacity 0.2s, top 0.2s);
-  background-color: rgba(#fff, 0.5);
+  background-color: rgba(#fff, 0.4);
   position: absolute;
   opacity: 0;
   width: 1720px;
@@ -58,11 +58,11 @@
 }
 
 .prev-1, .next-1 {
-  opacity: 0.2;
+  opacity: 0.6;
 }
 
 .prev-2, .next-2 {
-  opacity: 0.1;
+  opacity: 0.3;
 }
 
 .prev-2 {
