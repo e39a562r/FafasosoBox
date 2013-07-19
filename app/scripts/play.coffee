@@ -29,10 +29,10 @@
                         .prevAll().addClass('prev')
 
   timeline =
-    0: ->
+    200: ->
       $('.play-menu-games').hide()
       $('.play-menu-loading').show()
-    1000: ->
+    1200: ->
       $('.play-menu-loading').hide()
       $('.play-menu-games').show()
       $('body').on('keydown', playMenuKeyboardHandler)
