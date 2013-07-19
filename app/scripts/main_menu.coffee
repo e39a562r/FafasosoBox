@@ -1,5 +1,5 @@
 @mainMenu = ->
-  $('.main-menu').show().removeClass('play')
+  $('.console').show().removeClass('play')
 
   currentItem = 0
 

@@ -1,5 +1,5 @@
 @playMenu = ->
-  $('.main-menu').show().addClass('play')
+  $('.console').show().addClass('play')
 
   playMenuKeyboardHandler = (e) ->
     switch e.which

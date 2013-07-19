@@ -8,6 +8,10 @@ $loading-height: 128px;
 $loading-left:   (1920px - $loading-width) / 2;
 $loading-top:    $logo-top + $logo-height;
 
+.bootstrap {
+  opacity: 0;
+}
+
 .bootstrap-logo {
   opacity: 0.5;
   background-image: image-url('kamigami.png');

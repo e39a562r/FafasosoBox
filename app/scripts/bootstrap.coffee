@@ -11,6 +11,7 @@
       $('.bootstrap-logo').animate(opacity: 0, 500)
     12500: ->
       @mainMenu()
+    13000: ->
       $('.bootstrap').remove()
 
   for step, func of timeline

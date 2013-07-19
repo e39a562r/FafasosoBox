@@ -5,11 +5,6 @@ $menu-item-off-height: 86px;
 $menu-item-on-width: 1079px;
 $menu-item-on-height: 292px;
 
-.main-menu {
-  display: none;
-  opacity: 1;
-}
-
 .menu-item {
   @include transition(right 0.2s);
   position: absolute;
