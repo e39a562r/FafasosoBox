@@ -34,7 +34,7 @@
       $('.play-menu-loading').show()
     1200: ->
       $('.play-menu-loading').hide()
-      $('.play-menu-games').show()
+      $('.play-menu-games').css(opacity: 0).show().animate(opacity: 1)
       $('body').on('keydown', playMenuKeyboardHandler)
       selectItem(2)
 
