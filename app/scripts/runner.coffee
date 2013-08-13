@@ -1,1 +1,2 @@
-darkScreen()
+# darkScreen()
+playMenu()
