@@ -12,7 +12,7 @@
           selectItem(selectedItem + 1)
       when Gamepad.A
         selectedGame = $('.play-menu-game').eq(selectedItem).data()
-        url = "http://192.168.100.55:8080/s/#{selectedGame.gameId}@#{Date.now()}"
+        url = selectedGame.gameUrl
         window.open url
       when Gamepad.B
         $('body').off('keydown', playMenuKeyboardHandler)
